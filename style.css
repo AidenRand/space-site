@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 3000px;
+}
+
+nav {
+  background-color: black;
+}
+
+.navBar {
+  background-color: black;
+  padding-top: 10px;
+  align-content: center;
+}
+
+.spaceImg {
+  width: 50px;
+}
+
+.leftNav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 150px;
+}
+
+.webName {
+  font-size: 1.3rem;
+  margin-left: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  display: flex;
+  margin-left: 50px;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: rgb(214, 214, 214);
+}
+
+.rightNav {
+  display: flex;
+  margin-right: 150px;
+  gap: 50px;
+  font-size: 1.3rem;
+}
+
+.hamburger {
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  margin-right: 100px;
+
+  background: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger:active, .hamburger::before {
+    transform: rotate(-75deg) translate(-8px, -1px);
+}
+
+.hamburger:active, .hamburger::after {
+    transform: rotate(70deg) translate(-11px, -13px);
+}
+
+.hamburger:active, .bar {
+    opacity: 0;
+}
+
+a {
+  display: flex;
+  color: rgb(238, 238, 238);
+  text-decoration: none;
+  align-items: center;
+}
+
+.front-page-container {
+  display: flex;
+  font-size: 4rem;
+  font-family: "Heebo", sans-serif;
+  color: rgb(243, 243, 243);
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url(/photos/a2688fee6caacf8955c6c429713555bc.jpg);
+  background-size: cover;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  flex-direction: column;
+}
+
+.arrow-img {
+  display: flex;
+  position: relative;
+  top: 210px;
+  width: 50px;
+}
+
+#front-page-smallText {
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.frontPageHistory {
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.goddardPhoto {
+  height: 700px;
+  width: auto;
+}
+
+.frontPageText {
+  width: 700px;
+  font-size: 3rem;
+  margin-left: 100px;
+}
