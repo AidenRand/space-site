@@ -22,9 +22,9 @@
   </head>
   <body>
   <div class="navBar">
-      <ul>
+      <ul class="nav-list">
         <div class="leftNav">
-          <a href="#">
+          <a class="menu-opt" href="index.html">
             <img class="spaceImg" src="/photos/astronomy.png" alt="" />
             <div class="webName">
               <h1>SPACE HISTORY</h1>
@@ -32,34 +32,83 @@
           </a>
         </div>
         <div class="rightNav">
-          <li><a href="#">PAST</a></li>
-          <li><a href="#">PRESENT</a></li>
-          <li><a href="#">FUTURE</a></li>
+          <nav>
+          <li><a class="menu-links" href="past.html">PAST</a></li>
+          <li><a class="menu-links" href="present.html">PRESENT</a></li>
+          <li><a class="menu-links" href="Future.html">FUTURE</a></li>
+        </nav>
         </div>
-        <button class="hamburger">
-          <div class="bar"></div>
-        </button>
       </ul>
     </nav>
   </div>
 
   <div class="front-page-container">
     <p>THE HISTORY OF SPACE TRAVEL</p>
-    <p id="front-page-smallText" >The Adventure Begins Now </p>
+    <p id="front-page-smallText" >The Story Begins Now </p>
     <div class="arrow-png">
-      <img class="arrow-img" src="/photos/down-arrow (1).png" alt="">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
-  
-      <div class="frontPageHistory">
-        <img class="goddardPhoto" src="/photos/SI-A-42103h.jpg" alt="" />
-        <p class="frontPageText">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-          deserunt reprehenderit sunt labore, cupiditate quas soluta doloribus?
-          Necessitatibus, Facilis aperiam, debitis itaque ducimus illum aspernatur
-          ut molestias iusto. Blanditiis?
-        </p>
+
+  <div class="past-present-future">
+    <a href="past.html"><img class="moon-img" src="/photos/full-moon-moon-bright-sky-47367.jpeg" alt=""><p>Past</p></a>
+    <a href="present.html"><img class="galaxy-img" src="/photos/stephansquintet.jpg" alt=""><p>Present</p></a>
+    <a href="Future.html"><img class="mars-img" src="/photos/OSIRIS_Mars_true_color.jpg" alt=""><p>Future</p></a>
+  </div>
+
+      <div class="goddard-container">
+        <div class="goddard-photo">
+          <img src="/photos/SI-A-42103h.jpg" alt="" />
+          <p>Dr. Robert H. Goddard with the first ever liquid propelled rocket March 16, 1926</p>
+        </div>
+        <div class="goddard-history-text">
+          <h2>Robert Goddard</h2>
+          <p>
+            Dr. Robert H. Goddard was an American physicist, engineer, inventor,
+            and professor. Robert was born October 5, 1882 in Worcester Massachusetts,
+            and as a young boy he had severe stomach issues which resulted in him missing two
+            years of school. When he matured he became a varacious reader and made regular
+            trips to his local library. Goddard later attended Worcester Polytechnic Institue,
+            Where he earned a B.S. degree in physics in 1908. His whole life he was fascinated
+            with flight and space, and in 1915 Goddard performed his first launch of a gunpowder-fueled
+            rocket. He noticed that gunpowder was extremely insufficient at converting energy into 
+            thrust and motion. This later lead to Goddard creating the first ever liquid proppeled 
+            rocket in 1926. This rocket was launched on March 16, 1926, the flight lasted 2.5 seconds
+            and flew to a height of 41 feet at an everage speed of 60mph.
+          </p>
+        </div>
       </div>
+
+      <section aria-label="Space Photos">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">&#8656</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658</button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img class="carousel-img" src="/photos/most-iconic-space-photos-earthrise-apollo-8-william-anders-nasa.jpg"
+              alt="Earth from moon">
+            </li>
+            <li class="slide">
+              <img class="carousel-img" src="/photos/a2688fee6caacf8955c6c429713555bc.jpg"
+              alt="Earth from moon">
+            </li>
+            <li class="slide">
+              <img class="carousel-img" src="/photos/iconic-space-photos-armstrong-moon-nasa1.jpg"
+              alt="Earth from moon">
+            </li>
+          </ul>
+        </section>
+      </div>
+
+
+    <footer>
+      <div class="footer">
+        <p>Designed by Aiden Rand</p>
+        <a href="https://github.com/Cortrax"><img src="/photos/25231.png" alt=""></a>
+      </div>  
+    </footer>
   </body>
   <script src="app.js"></script>
 </html>
